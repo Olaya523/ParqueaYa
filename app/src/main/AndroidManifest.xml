@@ -12,6 +12,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Proyecto"
         tools:targetApi="31">
+
+
+
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyA0HZNYtvVnSH94M2RTNwqijM1OKxOKozE"
+            />
         <activity
             android:name=".editar_data"
             android:exported="false">
@@ -22,9 +30,6 @@
         <activity
             android:name=".eliminar_data"
             android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
         </activity>
         <activity
             android:name=".leer_data"
@@ -33,6 +38,9 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyA0HZNYtvVnSH94M2RTNwqijM1OKxOKozE" />
         <activity
             android:name=".anidar_data"
             android:exported="false">
@@ -40,6 +48,9 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
+        <activity
+            android:name=".MapsActivity"
+            android:label="Maps Activity" />
         <activity
             android:name=".buscar_nav"
             android:exported="false">
@@ -60,6 +71,7 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
+        <activity android:name=".RegisterActivity" />
     </application>
 
 </manifest>

@@ -17,7 +17,7 @@ class buscar_nav : AppCompatActivity() {
     var boton2: Button? = null
     var boton3: Button? = null
     var boton4: Button? = null
-
+    var boton5: Button? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -28,6 +28,7 @@ class buscar_nav : AppCompatActivity() {
         boton2 = findViewById(R.id.buttonAgregar)
         boton3 = findViewById(R.id.buttonEditar)
         boton4 = findViewById(R.id.button)
+        boton5 = findViewById(R.id.buttonMap)
 
 
         boton1?.setOnClickListener {
@@ -44,6 +45,9 @@ class buscar_nav : AppCompatActivity() {
 
         boton4?.setOnClickListener {
             startActivity(Intent(this,MainActivity::class.java))
+        }
+        boton5?.setOnClickListener {
+            startActivity(Intent(this,MapsActivity::class.java))
         }
 
         }
